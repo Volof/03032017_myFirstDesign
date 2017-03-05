@@ -13,6 +13,15 @@
     "jquery": "^3.1.1"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.0.1",
+    "optipng-bin": "^3.1.2"
   }
 }
