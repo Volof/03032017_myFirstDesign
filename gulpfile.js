@@ -10,12 +10,18 @@ var sync = require("browser-sync").create();
 var imagemin = require('gulp-imagemin');
 // var imageop = require("gulp-image-optimization");
 
-var isDevelopment = true;
+var isDevelopment = false;
 
-gulp.task('images', function() {
-    gulp.src('src/img/**/*')
+gulp.task('images', function () {
+   return gulp.src('src/img/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest("dist/img"));
+});
+
+// билдим шрифты
+gulp.task("fonts", function () {
+    return gulp.src("src/fonts/*.otf")
+        .pipe(gulp.dest("dist/fonts")); //вигружаєм в src
 });
 
 // gulp.task('images', function() {
@@ -68,9 +74,9 @@ gulp.task("html", function () {
 gulp.task("css", ["css:own", "css:vendor"]);
 gulp.task("js", ["js:own", "js:vendor"]);
 
-gulp.task("watch", ["build"],function () {
+gulp.task("watch", ["build"], function () {
     sync.init({
-        server:"dist"
+        server: "dist"
     });
     gulp.watch("src/css/**/*.less", ["css:own"]);// слухач на зміни
     gulp.watch("src/js/*.js", ["js:own"]);
@@ -79,5 +85,5 @@ gulp.task("watch", ["build"],function () {
     gulp.watch("dist/*.html").on("change", sync.reload);
 });
 
-gulp.task("build", ["html", "css", "js"]);
-gulp.task("default", ["build","watch"]);
+gulp.task("build", ["html", "css", "js", "fonts"]);
+gulp.task("default", ["build", "watch"]);
