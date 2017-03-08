@@ -1,0 +1,45 @@
+.Menu {
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: justify;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  &-item {
+    display: inline-block;
+  }
+  &-link {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Museosans-700", sans-serif;
+    line-height: 60px;
+    display: inline-block;
+    border-top: 3px solid transparent;
+
+    &:hover,
+    &:focus,
+    &.is-active {
+      border-top: 3px solid #c22d00;
+      text-decoration: none;
+      color: #c22d00;
+    }
+  }
+}
+.slogan-container{
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: "Aleo-Light";
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.slogan-container-price{
+  font-family: "Aleo-Bold"
+}

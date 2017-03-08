@@ -35,18 +35,24 @@ ul {
 
 .header {
   height: @header-height;
-  background: url("/img/header/header.jpg") no-repeat;
+  background: url("/img/header/header.jpg") no-repeat scroll center;
+  background-size: cover; //щобщоб картинка завжди займала всб площу не залежно від розширення
   .clearfix;
 }
 
 .container {
-  width: 940px;
-  margin: 0 auto;
+  //max-width: 940px;
+  text-align: center;
+  .clearfix;
 }
 
 .content {
   padding-bottom: @footer-height;
-  background: #f00;
+}
+.tabs{
+  min-height: 600px;
+  background: url("/img/content/tabs/skovorodka_bg.jpg") no-repeat scroll center;
+  background-size: cover;
 }
 
 .footer {
