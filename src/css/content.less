@@ -1,3 +1,27 @@
+//______nav-menu_____//
+.breakfast {
+  background: url("/img/content/nav-menu/breakfast.jpg") no-repeat scroll center;
+  background-size: cover;
+  color: #ffffff;
+  font-size: 29px;
+  font-family: "Aleo-Italic";
+}
+
+.dinner {
+  background: url("/img/content/nav-menu/dinner.jpg") no-repeat scroll center;
+  background-size: cover;
+  color: #ffffff;
+  font-size: 29px;
+  font-family: "Aleo-Italic";
+}
+
+.lunch {
+  background: url("/img/content/nav-menu/launch.jpg") no-repeat scroll center;
+  background-size: cover;
+  color: #ffffff;
+  font-size: 29px;
+  font-family: "Aleo-Italic";
+}
 
 .nav {
   font-size: 0;
@@ -14,14 +38,16 @@
   float: none;
   display: inline-block;
   height: 65px;
-  width: 25%;
-  margin-right: -4px;
+  width: 25.25%;
+  margin-right: -3px;
+  margin-bottom: -15px;
 }
 
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
   color: #f15a29;
+  cursor: pointer;
 }
 
 .nav-tabs > li > a {
@@ -32,10 +58,208 @@
   border-radius: 0px;
   background: #e3e3e3;
 }
-//____TAB____//
-.carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
-.onebyone-carosel .active.left { left: -33.33%; }
-.onebyone-carosel .active.right { left: 33.33%; }
-.onebyone-carosel .next { left: 33.33%; }
-.onebyone-carosel .prev { left: -33.33%; }
 
+//____TAB____//
+.carousel-inner.onebyone-carosel {
+  margin: auto;
+  width: 90%;
+}
+
+.onebyone-carosel .active.left {
+  left: -33.33%;
+}
+
+.onebyone-carosel .active.right {
+  left: 33.33%;
+}
+
+.onebyone-carosel .next {
+  left: 33.33%;
+}
+
+.onebyone-carosel .prev {
+  left: -33.33%;
+}
+
+.well {
+  padding: 40px 0px 33px 0px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0;
+}
+
+.text-center {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #f15a29;
+  font-family: "Aleo-Regular";
+}
+
+.carousel-control {
+  color: #f15a29;
+  width: 6%;
+}
+
+.carousel-control.right {
+  background: white;
+}
+
+.carousel-control.left {
+  background: white;
+}
+
+span.icon:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\f015";
+}
+
+.manager {
+  height: 440px;
+  background: white;
+  overflow: hidden;
+}
+
+.manager-col {
+  margin-top: 100px;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(231, 231, 231, 1);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(231, 231, 231, 1);
+  box-shadow: 0px 0px 10px 4px rgba(231, 231, 231, 1);
+}
+
+.manager-right {
+  border-left: 1px solid rgba(231, 231, 231, 1);
+  font-size: 16px;
+  font-family: "Museosans-500";
+  padding: 0 40px;
+  margin: 15px 0;
+}
+
+//_____Validation____//
+h2 {
+  color: #ffffff;
+  font-family: "Aleo-Bold";
+  font-size: 29px;
+}
+
+.val-wrap {
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+  //box-sizing: border-box;
+}
+
+.val-input {
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 30%;
+  height: 50px;
+  margin-right: 30px;
+  border: 0px;
+  border-radius: 4px;
+  background-color: rgba(201, 201, 201, 0.3);
+  font-size: 20px;
+  font-family: "Museosans-500", sans-serif;
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+.val-btn {
+  //box-sizing: border-box;
+  vertical-align: top;
+  font-family: "Museosans-500", sans-serif;
+  font-size: 20px;
+  background-color: #f15a29;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 4px;
+  padding: 11px 70px;
+}
+
+.val-btn:hover {
+  text-shadow: 0 0 4px #fff;
+}
+
+.tooltipster-sidetip .tooltipster-box {
+  background: #f15a29;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-background { //стрілка
+  border-bottom-color: #f15a29;
+  left: 0px;
+  top: 3px;
+}
+
+//____REstaurant____//
+.restaurant {
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  background: #ffffff;
+}
+
+.company {
+  border: 4px solid #f15a29;
+  border-radius: 6px;
+  margin: 30px 0;
+}
+
+.res-head {
+  height: 34px;
+  line-height: 34px;
+  padding: 0 15px;
+}
+.res-name{
+  float: left;
+}
+.res-logo{
+  text-align: center;
+  line-height: 200px;
+  vertical-align: middle;
+  width: 100%;
+  background: #ffffff;
+  float: none;
+  padding: 5px 15px;
+}
+.res-img-fix{
+  border: none;
+  width: 100%;
+}
+.company-name {
+  font-size: 18px;
+  font-family: "Aleo-Bold", sans-serif;
+  color: black;}
+.company-name:hover{
+  color: #f15a29;
+}
+.sales{
+  line-height: 35px;
+  height: 35px;
+  vertical-align: middle;
+  color: #777;
+  font-size: 16px;
+  padding: 0 15px;
+  border-bottom: 2px solid #f2f2f2;
+  position: relative;
+}
+.left{
+  float: left !important;
+}
+.fa-book:before{
+  padding-right: 15px;
+  position: relative;
+}
+.fa-clock-o:before{
+   padding-right: 15px;
+   position: relative;
+ }
+.fa-car:before{
+  padding-right: 12px;
+  position: relative;
+}
+.rait{
+  float: right;
+  padding-top: 3px;
+}

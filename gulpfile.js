@@ -10,7 +10,7 @@ var sync = require("browser-sync").create();
 var imagemin = require('gulp-imagemin');
 // var imageop = require("gulp-image-optimization");
 
-var isDevelopment = false;
+var isDevelopment = true;
 
 gulp.task('images', function () {
    return gulp.src('src/img/**/*')
@@ -21,6 +21,10 @@ gulp.task('images', function () {
 // билдим шрифты
 gulp.task("fonts", function () {
     return gulp.src("src/fonts/*.otf")
+        .pipe(gulp.dest("dist/fonts")); //вигружаєм в src
+});
+gulp.task("fonts_bs", function () {
+    return gulp.src("node_modules/bootstrap/fonts/**/*.{otf,eot,svg,ttf,woff,woff2}")
         .pipe(gulp.dest("dist/fonts")); //вигружаєм в src
 });
 
@@ -36,6 +40,11 @@ gulp.task("fonts", function () {
 gulp.task("js:vendor", function () {
     return gulp.src([
         "node_modules/jquery/dist/jquery.js",
+        "node_modules/jquery/dist/jquery-migrate.min.js",
+        "node_modules/jquery-bar-rating/dist/jquery.barrating.min.js",
+        "node_modules/tooltipster/dist/js/tooltipster.bundle.min.js",
+        "node_modules/jquery-validation/dist/jquery.validate.js",
+        "node_modules/sweetalert/dist/sweetalert.min.js",
         "node_modules/bootstrap/dist/js/bootstrap.js"
     ])
         .pipe(concat("vendor.js"))
@@ -45,7 +54,11 @@ gulp.task("js:vendor", function () {
 
 gulp.task("css:vendor", function () {
     return gulp.src([
-        "node_modules/bootstrap/dist/css/bootstrap.css"])
+        "node_modules/bootstrap/dist/css/bootstrap.css",
+        "node_modules/sweetalert/dist/sweetalert.css",
+        "node_modules/jquery-bar-rating/dist/themes/fontawesome-stars.css",
+        "node_modules/tooltipster/dist/css/tooltipster.bundle.min.css"
+    ])
         .pipe(gulpIf(!isDevelopment, nano()))
         .pipe(concat("vendor.css"))
         .pipe(gulp.dest("dist/css"));
