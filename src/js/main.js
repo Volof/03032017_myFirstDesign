@@ -82,61 +82,62 @@ $(document).ready(function () {
         }
     });
 });
-// $(document).ready(function () {
-//     // initialize tooltipster on text input elements
-//     $('input[type="text"]').tooltipster({ //find more options on the tooltipster page
-//         trigger: 'custom', // default is 'hover' which is no good here
-//         position: 'bottom',
-//         animation: 'swing'
-//     });
-//     // initialize validate plugin on the form
-//     $("#myform_2").validate({
-//         errorPlacement: function (error, element) {
-//             var ele = $(element),
-//                 err = $(error),
-//                 msg = err.text();
-//             if (msg != null && msg !== "") {
-//                 ele.tooltipster('content', msg);
-//                 ele.tooltipster('open'); //open only if the error message is not blank. By default jquery-validate will return a label with no actual text in it so we have to check the innerHTML.
-//             }
-//         },
-//         unhighlight: function (element, errorClass, validClass) {
-//             $(element).removeClass(errorClass).addClass(validClass).tooltipster('close');
-//         },
-//         rules: {
-//             i1:{
-//                 required: true,
-//                 text: true,
-//                 minlength: 3
-//             },
-//             i2:{
-//                 required: true,
-//                 email: true
-//             },
-//             i3:{
-//                 required: true,
-//                 text: true,
-//                 minlength: 5
-//             }
-//         },
-//         submitHandler: function (form) { // for demo
-//             // vForm_2.reset();
-//             // swal({
-//             //     title: "HELLO!",
-//             //     text: "Always stay full",
-//             //     type: "success",
-//             //     confirmButtonColor: "#f15a29",
-//             //     animation: "slide-from-top"
-//             // });
-//             return false;
-//         }
-//     });
-// });
+$(document).ready(function () {
+    // initialize tooltipster on text input elements
+    $('input[type="text"]').tooltipster({ //find more options on the tooltipster page
+        trigger: 'custom', // default is 'hover' which is no good here
+        position: 'bottom',
+        animation: 'swing'
+    });
+    // initialize validate plugin on the form
+    $("#myform_2").validate({
+        errorPlacement: function (error, element) {
+            var ele = $(element),
+                err = $(error),
+                msg = err.text();
+            if (msg != null && msg !== "") {
+                ele.tooltipster('content', msg);
+                ele.tooltipster('open'); //open only if the error message is not blank. By default jquery-validate will return a label with no actual text in it so we have to check the innerHTML.
+            }
+        },
+        unhighlight: function (element, errorClass, validClass) {
+            $(element).removeClass(errorClass).addClass(validClass).tooltipster('close');
+        },
+        rules: {
+            i1:{
+                required: true,
+                text: true,
+                minlength: 3
+            },
+            i2:{
+                required: true,
+                email: true
+            },
+            i3:{
+                required: true,
+                text: true,
+                minlength: 5
+            }
+        },
+        submitHandler: function (form) { // for demo
+            vForm_2.reset();
+            swal({
+                title: "HELLO!",
+                text: "Always stay full",
+                type: "success",
+                confirmButtonColor: "#f15a29",
+                animation: "slide-from-top"
+            });
+            return false;
+        }
+    });
+});
 //___rating_stars__//
 $(function() {
     $('#example1').barrating({
         theme: 'fontawesome-stars',
-        initialRating: "4"
+        initialRating: "4",
+        color: "#fd5823"
     });
     $('#example2').barrating({
         theme: 'fontawesome-stars',
@@ -178,3 +179,15 @@ $(document).ready(function() {
         ]
     } );
 } );
+//____Scroll____//
+
+$(document).ready(function() {
+    $("a.scrollto").click(function() {
+        var elementClick = $(this).attr("href")
+        var destination = $(elementClick).offset().top;
+        jQuery("html:not(:animated),body:not(:animated)").animate({
+            scrollTop: destination
+        }, 2000);
+        return false;
+    });
+});

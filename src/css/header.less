@@ -33,8 +33,11 @@
     }
   }
 }
+.logo-container{
+  margin-top: 40px;
+}
 .slogan-container{
-  margin-top: 50px;
+  margin: 50px 0;
   font-size: 40px;
   font-family: "Aleo-Light";
   color: #ffffff;
@@ -42,4 +45,32 @@
 }
 .slogan-container-price{
   font-family: "Aleo-Bold"
+}
+
+
+//_____________@media______________//
+@media (max-width: 767px) {
+  .Menu {
+    margin-top: 90px;
+  }
+
+  .Menu-item {
+    display: block;
+    height: auto;
+  }
+
+  .Menu-link {
+    display: block;
+    //line-height: 40px;
+    text-align: right;
+    border-right: 3px solid transparent;
+    border-top: none;
+    padding-right: 10px;
+    &:hover,
+    &:focus,
+    &.is-active {
+      border-right: 3px solid #fff;
+      border-top: none;
+    }
+  }
 }

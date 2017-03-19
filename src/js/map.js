@@ -98,13 +98,17 @@
 
 })(jQuery, google);
 
-//____show___//
+//____show_map__//
 var show_map = document.getElementById("show_map");
-var close_map = document.getElementById("close_map")
+var close_map = document.getElementById("close_map");
 show_map.addEventListener("click", function (e) {
     e.preventDefault();
     wrap_map.style.display = "block";
+    google.maps.event.trigger(map, 'resize');
+    // map.setCenter(49.551620,25.617050);
     contact.style.display = "none";
+
+
 });
 close_map.addEventListener("click", function (e) {
     e.preventDefault();

@@ -33,8 +33,8 @@ ul {
   min-height: 100%;
 }
 
-.header {
-  height: @header-height;
+.header1 {
+  height: 100%;
   background: url("/img/header/header.jpg") no-repeat scroll center;
   background-size: cover; //щоб картинка завжди займала всю площу не залежно від розширення
   .clearfix;
@@ -46,8 +46,17 @@ ul {
   .clearfix;
 }
 
+
 .content {
   padding-bottom: @footer-height;
+}
+.nav-container {
+  width: 100%;
+  font-size: 0;}
+.nav-container__toggle-btn{
+  font-size: 40px;
+  color: #ffffff;
+  position: absolute;
 }
 
 .tabs {
@@ -71,4 +80,19 @@ ul {
   background: -webkit-linear-gradient(left, #feccb1 0%, #fd5823 0%, #f17432 28%, #f17432 72%, #fd5823 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #feccb1 0%, #fd5823 0%, #f17432 28%, #f17432 72%, #fd5823 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feccb1', endColorstr='#fd5823', GradientType=1); /* IE6-9 */
+};
+
+//____media____
+
+@media (max-width: 767px)  {
+  .header1 {
+    background: #feccb1; /* Old browsers */
+    background: -moz-linear-gradient(left, #feccb1 0%, #fd5823 0%, #f17432 28%, #f17432 72%, #fd5823 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #feccb1 0%, #fd5823 0%, #f17432 28%, #f17432 72%, #fd5823 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #feccb1 0%, #fd5823 0%, #f17432 28%, #f17432 72%, #fd5823 100%);
+    overflow:hidden;
+  }
+.logo-container{
+  display: none;
+}
 }
