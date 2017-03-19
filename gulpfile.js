@@ -8,14 +8,22 @@ var gulpIf = require("gulp-if");
 var autoprefixer = require("gulp-autoprefixer");
 var sync = require("browser-sync").create();
 var imagemin = require('gulp-imagemin');
+
 // var imageop = require("gulp-image-optimization");
 
 var isDevelopment = true;
+
 
 gulp.task('images', function () {
    return gulp.src('src/img/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest("dist/img"));
+});
+// билд json
+
+gulp.task("json", function () {
+    return gulp.src("src/json/*.json")
+        .pipe(gulp.dest("dist/json"));
 });
 
 // билдим шрифты
@@ -41,11 +49,14 @@ gulp.task("js:vendor", function () {
     return gulp.src([
         "node_modules/jquery/dist/jquery.js",
         "node_modules/jquery/dist/jquery-migrate.min.js",
+        "node_modules/datatables.net/js/jquery.dataTables.js",
         "node_modules/jquery-bar-rating/dist/jquery.barrating.min.js",
         "node_modules/tooltipster/dist/js/tooltipster.bundle.min.js",
         "node_modules/jquery-validation/dist/jquery.validate.js",
         "node_modules/sweetalert/dist/sweetalert.min.js",
-        "node_modules/bootstrap/dist/js/bootstrap.js"
+        "node_modules/bootstrap/dist/js/bootstrap.js",
+        "src/libs/Flat-UI-Maps/js/flatui-colorDrop.js",
+        "src/libs/Flat-UI-Maps/js/html5shiv.js"
     ])
         .pipe(concat("vendor.js"))
         .pipe(gulpIf(!isDevelopment, uglify()))
@@ -57,14 +68,20 @@ gulp.task("css:vendor", function () {
         "node_modules/bootstrap/dist/css/bootstrap.css",
         "node_modules/sweetalert/dist/sweetalert.css",
         "node_modules/jquery-bar-rating/dist/themes/fontawesome-stars.css",
-        "node_modules/tooltipster/dist/css/tooltipster.bundle.min.css"
+        "node_modules/tooltipster/dist/css/tooltipster.bundle.min.css",
+        "src/libs/Flat-UI-Maps/css/flat-ui.css",
+        "src/libs/Flat-UI-Maps/css/map.css",
+        "src/libs/Flat-UI-Maps/css/flatui-colorDrop.css"
     ])
         .pipe(gulpIf(!isDevelopment, nano()))
         .pipe(concat("vendor.css"))
         .pipe(gulp.dest("dist/css"));
 });
 gulp.task("js:own", function () {
-    return gulp.src("src/js/main.js")
+    return gulp.src([
+        "src/js/main.js",
+        "src/js/map.js"
+    ])
         .pipe(uglify())
         .pipe(gulp.dest("dist/js"))
 });
@@ -98,5 +115,5 @@ gulp.task("watch", ["build"], function () {
     gulp.watch("dist/*.html").on("change", sync.reload);
 });
 
-gulp.task("build", ["html", "css", "js", "fonts"]);
+gulp.task("build", ["html", "css", "js", "fonts", "json"]);
 gulp.task("default", ["build", "watch"]);

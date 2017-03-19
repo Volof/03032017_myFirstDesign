@@ -1,28 +1,86 @@
 //______nav-menu_____//
+.nav-menu{
+  width:100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+}
+.nav-menu-fix{
+  display: inline-block;
+  color: #ffffff;
+  font-size: 29px;
+  font-family: "Aleo-Italic";
+  height: 210px;
+  line-height: 210px;
+  width: 25%;
+}
+.nav-btn{
+  float: left;
+  width: 25%;
+  font-size: 29px;
+  font-family: "Aleo-Italic";
+  height: 210px;
+}
+.nav-btn-happy{
+  height: 105px;
+  line-height: 105px;
+  background: #ffffff;
+}
+.a-happy{
+  color: #4b4b4b;
+  text-decoration: none;
+}
+.a-happy:hover{
+  color: #4b4b4b;
+  text-shadow: 0 0 4px #4b4b4b;
+}
+.a-party{
+  color: #ffffff;
+  text-decoration: none;
+}
+.a-party:hover{
+  color: #ffffff;
+  text-shadow: 0 0 4px #fff;
+}
+.nav-btn-party{
+  height: 105px;
+  line-height: 105px;
+  background: #f15a29;
+}
 .breakfast {
   background: url("/img/content/nav-menu/breakfast.jpg") no-repeat scroll center;
   background-size: cover;
-  color: #ffffff;
-  font-size: 29px;
-  font-family: "Aleo-Italic";
 }
-
 .dinner {
   background: url("/img/content/nav-menu/dinner.jpg") no-repeat scroll center;
   background-size: cover;
-  color: #ffffff;
-  font-size: 29px;
-  font-family: "Aleo-Italic";
 }
 
 .lunch {
   background: url("/img/content/nav-menu/launch.jpg") no-repeat scroll center;
   background-size: cover;
-  color: #ffffff;
-  font-size: 29px;
-  font-family: "Aleo-Italic";
 }
-
+//___tab_drinks________//
+.tab_drinks{
+  background:#fff;
+  height: 333px;
+}
+.tab_drinks_img{
+  float: left;
+  margin: 40px;
+}
+.tab_drinks_text{
+  padding: 40px 40px 0 0;
+  text-align: justify;
+  text-indent: 15px;
+  font-size: 16px;
+  font-family: Museosans-500, sans-serif;
+}
+.tab_drinks_text:first-letter{
+  color: #f15a29;
+  font-size: 200%;
+}
+//________________________________________//
 .nav {
   font-size: 0;
 }
@@ -33,7 +91,9 @@
   width: 100%;
   display: inline-block;
 }
-
+.item{
+  width: 100%;
+}
 .nav-tabs > li {
   float: none;
   display: inline-block;
@@ -112,13 +172,18 @@ span.icon:before {
   font-family: 'Glyphicons Halflings';
   content: "\f015";
 }
-
+//___________manager_____________//
 .manager {
   height: 440px;
   background: white;
   overflow: hidden;
 }
-
+h3 {
+  text-transform: capitalize;
+  color: #f15a29;
+  font-size: 20px;
+  font-family: "Aleo-Bold";
+}
 .manager-col {
   margin-top: 100px;
   -webkit-box-shadow: 0px 0px 10px 4px rgba(231, 231, 231, 1);
@@ -127,7 +192,6 @@ span.icon:before {
 }
 
 .manager-right {
-  border-left: 1px solid rgba(231, 231, 231, 1);
   font-size: 16px;
   font-family: "Museosans-500";
   padding: 0 40px;
@@ -142,29 +206,30 @@ h2 {
 }
 
 .val-wrap {
-  display: inline-block;
+  //display: inline-block;
   width: 100%;
   margin-top: 15px;
-  //box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 29px;
 }
 
 .val-input {
-  box-sizing: border-box;
-  vertical-align: top;
+  box-sizing: border-box !important;
+  vertical-align: top !important;
   width: 30%;
-  height: 50px;
+  height: 50px !important;
   margin-right: 30px;
-  border: 0px;
+  border: 0px !important;
   border-radius: 4px;
   background-color: rgba(201, 201, 201, 0.3);
-  font-size: 20px;
-  font-family: "Museosans-500", sans-serif;
+  font-size: 20px !important;
+  font-family: "Museosans-500", sans-serif !important;
   padding-left: 20px;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .val-btn {
-  //box-sizing: border-box;
+  display: inline-block;
   vertical-align: top;
   font-family: "Museosans-500", sans-serif;
   font-size: 20px;

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/vendor.css">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -18,11 +19,11 @@
                 <nav class="Menu">
                     <div class="collapse navbar-collapse" id="main-menu">
                         <ul class="Menu-list">
-                            <li class="Menu-item"><a href="#" class="Menu-link">Why</a></li>
-                            <li class="Menu-item"><a href="#" class="Menu-link">How</a></li>
-                            <li class="Menu-item"><a href="#" class="Menu-link">What</a></li>
-                            <li class="Menu-item"><a href="#" class="Menu-link">Who</a></li>
-                            <li class="Menu-item"><a href="#" class="Menu-link">Help</a></li>
+                            <li class="Menu-item"><a href="#" class="Menu-link">Menu</a></li>
+                            <li class="Menu-item"><a href="menu.html" class="Menu-link">Personal</a></li>
+                            <li class="Menu-item"><a href="#" class="Menu-link">Social</a></li>
+                            <li class="Menu-item"><a href="contact.html" class="Menu-link" target="_blank">Contacts</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -39,34 +40,18 @@
     </header>
     <main class="content">
         <div class="nav-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        <div class="nav-btn">
-                            <div>
-                                <button type="button">Happy Hour</button>
-                            </div>
-                            <div>
-                                <button type="button">Party Time</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        <div class="breakfast">
-                            <span>Breakfast</span>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        <div class="lunch">
-                            <span>Lunch</span>
-                        </div>
-                    </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        <div class="dinner">
-                            <span>Dinner</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="nav-btn">
+                <div class="nav-btn-happy"><a href="#" class="a-happy">Happy Hour</a></div>
+                <div class="nav-btn-party"><a href="#" class="a-party">Party Time</a></div>
+            </div>
+            <div class="breakfast nav-menu-fix">
+                <span>Breakfast</span>
+            </div>
+            <div class="lunch nav-menu-fix">
+                <span>Lunch</span>
+            </div>
+            <div class="dinner nav-menu-fix">
+                <span>Dinner</span>
             </div>
         </div>
         <div class="restaurant">
@@ -89,7 +74,8 @@
                                 </div>
                             </div>
                             <div class="res-logo">
-                                <a href=""><img src="img/logo_restaurant/lvivChocolate_400x266.png" alt="lviv" class="res-img-fix"></a>
+                                <a href=""><img src="img/logo_restaurant/lvivChocolate_400x266.png" alt="lviv"
+                                                class="res-img-fix"></a>
                             </div>
                             <div class="sales">
                                 <div class="left">
@@ -125,7 +111,8 @@
                                 </div>
                             </div>
                             <div class="res-logo">
-                                <a href=""><img src="img/logo_restaurant/mcDonalds_400x266.png" alt="chelentano" class="res-img-fix"></a>
+                                <a href=""><img src="img/logo_restaurant/mcDonalds_400x266.png" alt="chelentano"
+                                                class="res-img-fix"></a>
                             </div>
                             <div class="sales">
                                 <div class="left">
@@ -161,7 +148,8 @@
                                 </div>
                             </div>
                             <div class="res-logo">
-                                <a href=""><img src="img/logo_restaurant/celentano_400x266.png" alt="chelentano" class="res-img-fix"></a>
+                                <a href=""><img src="img/logo_restaurant/celentano_400x266.png" alt="chelentano"
+                                                class="res-img-fix"></a>
                             </div>
                             <div class="sales">
                                 <div class="left">
@@ -197,7 +185,8 @@
                                 </div>
                             </div>
                             <div class="res-logo">
-                                <a href=""><img src="img/logo_restaurant/chickenHut_400x266.png" alt="chikenhut" class="res-img-fix"></a>
+                                <a href=""><img src="img/logo_restaurant/chickenHut_400x266.png" alt="chikenhut"
+                                                class="res-img-fix"></a>
                             </div>
                             <div class="sales">
                                 <div class="left">
@@ -211,7 +200,8 @@
                             </div>
                             <div class="sales delivery">
                                 <div class="left">
-                                    <span class="fa fa-car">Food Delivery - <span style="color: darkgreen">free</span></span>
+                                    <span class="fa fa-car">Food Delivery - <span
+                                            style="color: darkgreen">free</span></span>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +223,8 @@
                                 </div>
                             </div>
                             <div class="res-logo">
-                                <a href=""><img src="img/logo_restaurant/rustyPub_400x266.png" alt="rustyPub" class="res-img-fix"></a>
+                                <a href=""><img src="img/logo_restaurant/rustyPub_400x266.png" alt="rustyPub"
+                                                class="res-img-fix"></a>
                             </div>
                             <div class="sales">
                                 <div class="left">
@@ -269,7 +260,8 @@
                                 </div>
                             </div>
                             <div class="res-logo">
-                                <a href=""><img src="img/logo_restaurant/hinkalnya_400x266.png" alt="hinkal'nya" class="res-img-fix"></a>
+                                <a href=""><img src="img/logo_restaurant/hinkalnya_400x266.png" alt="hinkal'nya"
+                                                class="res-img-fix"></a>
                             </div>
                             <div class="sales">
                                 <div class="left">
@@ -376,9 +368,75 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="tab2">b</div>
-                                <div role="tabpanel" class="tab-pane" id="tab3">c</div>
-                                <div role="tabpanel" class="tab-pane" id="tab4">d</div>
+                                <div role="tabpanel" class="tab-pane" id="tab2">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="tab_drinks">
+                                                <a href="#"><img src="/img/content/tabs/tab_drinks.jpg"
+                                                                 class="tab_drinks_img"></a>
+                                                <div class="tab_drinks_about">
+                                                    <p class="tab_drinks_text">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Architecto consectetur dolor doloremque
+                                                        ducimus, facilis fuga harum itaque laborum necessitatibus nihil
+                                                        nisi nobis nostrum nulla odit officiis porro possimus, quia
+                                                        quibusdam quo repellat repudiandae sed temporibus velit!
+                                                        Accusantium aliquid asperiores at atque aut corporis dicta ea
+                                                        eveniet excepturi illum in magnam minus modi nam necessitatibus
+                                                        nesciunt officia perferendis provident quas quasi quia quibusdam
+                                                        recusandae sed sequi, sint ullam voluptas. Delectus dolore eaque
+                                                        error exercitationem fuga inventore, porro quis sint
+                                                        voluptatibus. Illum?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab3">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="tab_drinks">
+                                                <a href="#"><img src="/img/content/tabs/tab_chiken.jpg"
+                                                                 class="tab_drinks_img"></a>
+                                                <div class="tab_drinks_about">
+                                                    <p class="tab_drinks_text">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Architecto consectetur dolor doloremque
+                                                        ducimus, facilis fuga harum itaque laborum necessitatibus nihil
+                                                        nisi nobis nostrum nulla odit officiis porro possimus, quia
+                                                        quibusdam quo repellat repudiandae sed temporibus velit!
+                                                        Accusantium aliquid asperiores at atque aut corporis dicta ea
+                                                        eveniet excepturi illum in magnam minus modi nam necessitatibus
+                                                        nesciunt officia perferendis provident quas quasi quia quibusdam
+                                                        recusandae sed sequi, sint ullam voluptas. Delectus dolore eaque
+                                                        error exercitationem fuga inventore, porro quis sint
+                                                        voluptatibus. Illum?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab4">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="tab_drinks">
+                                                <a href="#"><img src="/img/content/tabs/tab_rice.jpg"
+                                                                 class="tab_drinks_img"></a>
+                                                <div class="tab_drinks_about">
+                                                    <p class="tab_drinks_text">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Architecto consectetur dolor doloremque
+                                                        ducimus, facilis fuga harum itaque laborum necessitatibus nihil
+                                                        nisi nobis nostrum nulla odit officiis porro possimus, quia
+                                                        quibusdam quo repellat repudiandae sed temporibus velit!
+                                                        Accusantium aliquid asperiores at atque aut corporis dicta ea
+                                                        eveniet excepturi illum in magnam minus modi nam necessitatibus
+                                                        nesciunt officia perferendis provident quas quasi quia quibusdam
+                                                        recusandae sed sequi, sint ullam voluptas. Delectus dolore eaque
+                                                        error exercitationem fuga inventore, porro quis sint
+                                                        voluptatibus. Illum?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -392,8 +450,109 @@
                         <div class="manager-col">
                             <div class="row">
                                 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-                                    <div class="manager-left">
+                                    <div class="man-slider">
                                         <h3>Our happy customers</h3>
+                                        <div class="row">
+                                            <div class="col-md-12" data-wow-delay="0.2s">
+                                                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                                    <!-- Bottom Carousel Indicators -->
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#quote-carousel" data-slide-to="0"
+                                                            class="img-responsive"><img class="img-responsive "
+                                                                                        src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg"
+                                                                                        alt="">
+                                                        </li>
+                                                        <li data-target="#quote-carousel" data-slide-to="1"><img
+                                                                class="img-responsive"
+                                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg"
+                                                                alt="">
+                                                        </li>
+                                                        <li data-target="#quote-carousel" data-slide-to="2"
+                                                            class="active"><img
+                                                                class="img-responsive"
+                                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
+                                                                alt="">
+                                                        </li>
+                                                        <li data-target="#quote-carousel" data-slide-to="3"><img
+                                                                class="img-responsive"
+                                                                src="img/content/photo-mng/1.jpg"
+                                                                alt="1">
+                                                        </li>
+                                                        <li data-target="#quote-carousel" data-slide-to="4"><img
+                                                                class="img-responsive"
+                                                                src="img/content/photo-mng/2.jpg"
+                                                                alt="1">
+                                                        </li>
+                                                    </ol>
+                                                    <!-- Carousel Slides / Quotes -->
+                                                    <div class="carousel-inner text-center1">
+                                                        <!-- Quote 1 -->
+                                                        <div class="item active">
+                                                            <blockquote>
+                                                                <div class="row">
+                                                                    <div class="col-sm-8 col-sm-offset-2">
+                                                                        <p>Your fast food can be your last food.</p>
+                                                                        <small>Someone famous</small>
+                                                                    </div>
+                                                                </div>
+                                                            </blockquote>
+                                                        </div>
+                                                        <!-- Quote 2 -->
+                                                        <div class="item">
+                                                            <blockquote>
+                                                                <div class="row">
+                                                                    <div class="col-sm-8 col-sm-offset-2">
+                                                                        <p>Eat to live, don’t live to eat.</p>
+                                                                        <small>Someone famous</small>
+                                                                    </div>
+                                                                </div>
+                                                            </blockquote>
+                                                        </div>
+                                                        <!-- Quote 3 -->
+                                                        <div class="item">
+                                                            <blockquote>
+                                                                <div class="row">
+                                                                    <div class="col-sm-8 col-sm-offset-2">
+                                                                        <p>Only punks eat junk.</p>
+                                                                        <small>Someone famous</small>
+                                                                    </div>
+                                                                </div>
+                                                            </blockquote>
+                                                        </div>
+                                                        <!-- Quote 4 -->
+                                                        <div class="item">
+                                                            <blockquote>
+                                                                <div class="row">
+                                                                    <div class="col-sm-8 col-sm-offset-2">
+                                                                        <p>Beware what you eat, it becomes a part of
+                                                                            you.</p>
+                                                                        <small>Someone famous</small>
+                                                                    </div>
+                                                                </div>
+                                                            </blockquote>
+                                                        </div>
+                                                        <!-- Quote 5 -->
+                                                        <div class="item">
+                                                            <blockquote>
+                                                                <div class="row">
+                                                                    <div class="col-sm-8 col-sm-offset-2">
+                                                                        <p>It’s always better when it’s natural.</p>
+                                                                        <small>Someone famous</small>
+                                                                    </div>
+                                                                </div>
+                                                            </blockquote>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Carousel Buttons Next/Prev -->
+                                                    <a data-slide="prev" href="#quote-carousel"
+                                                       class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                                                    <a data-slide="next" href="#quote-carousel"
+                                                       class="right carousel-control"><i
+                                                            class="fa fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">

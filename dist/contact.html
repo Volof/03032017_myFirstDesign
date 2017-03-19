@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/vendor.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body>
+<div id="contact" name="contact" class="box">
+    <div class="container">
+        <h2 class="title">Contact us</h2>
+        <form action="#" id="myform_2" class="clear-fix" name="vForm_2">
+            <fieldset class="text-center">
+                <div class="clearfix">
+                    <div class="contact-left">
+                        <input type="text" placeholder="your Name *" class="contact-input" name="i1" required>
+                        <input type="text" placeholder="your e-mail *" class="contact-input" name="i2" required>
+                        <input type="text" placeholder="subject" class="contact-input" name="i3" required>
+                    </div>
+                    <div class="contact-right">
+                        <textarea cols="0" rows="0" placeholder="your messege *" class="contact-text"
+                                  name="i4"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="val-btn" id="register">Send Message</button>
+            </fieldset>
+        </form>
+    </div>
+    <a class="btn-map" href="#" id="show_map"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+    <h4 class="content-h4">map</h4>
+</div>
+<div id="wrap_map">
+    <aside id="sidebar" class="wet-asphalt">
+        <header>
+            <h3 class="turquoise-text">Map Styles</h3>
+        </header>
+        <ul class="sidebar-options">
+            <li>
+                <h5>Hue</h5>
+                <div id="hue-list" class="btn-group select colors">
+                    <i class="dropdown-arrow"></i>
+                    <button class="btn dropdown-toggle clearfix btn-embossed" data-toggle="dropdown">
+                        <span class="filter-option pull-left"> Pick a color </span>&nbsp;
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h5>Roads</h5>
+                <div id="road-list" class="btn-group select colors">
+                    <i class="dropdown-arrow"></i>
+                    <button class="btn dropdown-toggle clearfix btn-embossed" data-toggle="dropdown">
+                        <span class="filter-option pull-left"> Pick a color </span>&nbsp;
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h5>Water</h5>
+                <div id="water-list" class="btn-group select colors">
+                    <i class="dropdown-arrow"></i>
+                    <button class="btn dropdown-toggle clearfix btn-embossed" data-toggle="dropdown">
+                        <span class="filter-option pull-left"> Pick a color </span>&nbsp;
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h5>Parks</h5>
+                <div id="park-list" class="btn-group select colors">
+                    <i class="dropdown-arrow"></i>
+                    <button class="btn dropdown-toggle clearfix btn-embossed" data-toggle="dropdown">
+                        <span class="filter-option pull-left"> Pick a color </span>&nbsp;
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h5>Landscape</h5>
+                <div id="landscape-list" class="btn-group select colors">
+                    <i class="dropdown-arrow"></i>
+                    <button class="btn dropdown-toggle clearfix btn-embossed" data-toggle="dropdown">
+                        <span class="filter-option pull-left"> Pick a color </span>&nbsp;
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <a class="btn-map-close" href="#" id="close_map">Close map</a>
+    </aside>
+    <div id="map">
+
+    </div>
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+<script src="js/map.js"></script>
+</body>
+</html>
