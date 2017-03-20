@@ -224,9 +224,9 @@ $("#demo01").animatedModal({
     animatedIn: "lightSpeedIn",
     animatedOut: "bounceOutDown"
 });
-$("#demo02").animatedModal({
-    color: "#f15a29",
-    animatedIn: "lightSpeedIn",
-    animatedOut: "bounceOutDown"
-});
+// $("#demo02").animatedModal({
+//     color: "#f15a29",
+//     animatedIn: "lightSpeedIn",
+//     animatedOut: "bounceOutDown"
+// });
 
