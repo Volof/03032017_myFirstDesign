@@ -82,7 +82,8 @@ gulp.task("css:vendor", function () {
 gulp.task("js:own", function () {
     return gulp.src([
         "src/js/main.js",
-        "src/js/map.js"
+        "src/js/map.js",
+        "src/js/dataTable.js"
     ])
         .pipe(uglify())
         .pipe(gulp.dest("dist/js"))
@@ -117,5 +118,5 @@ gulp.task("watch", ["build"], function () {
     gulp.watch("dist/*.html").on("change", sync.reload);
 });
 
-gulp.task("build", ["html", "css", "js", "fonts", "json"]);
+gulp.task("build", ["html", "css", "js", "fonts", "json", "images", "fonts_bs"]);
 gulp.task("default", ["build", "watch"]);
