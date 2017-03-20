@@ -183,7 +183,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $("a.scrollto").click(function() {
-        var elementClick = $(this).attr("href")
+        var elementClick = $(this).attr("href");
         var destination = $(elementClick).offset().top;
         jQuery("html:not(:animated),body:not(:animated)").animate({
             scrollTop: destination
@@ -191,3 +191,42 @@ $(document).ready(function() {
         return false;
     });
 });
+//____nav_top_btn_color___//
+var btnHappy = document.getElementById("btn_happy"),
+    btnParty = document.getElementById("btn_party"),
+    breakfast_swap= document.getElementById("breakfast_swap"),
+    lunch_swap = document.getElementById("lunch_swap"),
+    dinner_swap= document.getElementById("dinner_swap");
+
+btnHappy.addEventListener("click", function (e) {
+    e.preventDefault();
+    btn_happy.style.background = "#f15a29";
+    btn_happy.style.color = "#fff";
+    btn_party.style.background = "#fff";
+    btn_party.style.color = "#4b4b4b";
+    breakfast_swap.style.backgroundImage = "url('/img/content/nav-menu/Prime_Rib_Dinner_H.jpg')";
+    lunch_swap.style.backgroundImage = "url('/img/content/nav-menu/Prime_H.jpg')";
+    dinner_swap.style.backgroundImage = "url('/img/content/nav-menu/HH.jpg')";
+});
+btnParty.addEventListener("click", function (e) {
+    e.preventDefault();
+    btn_party.style.background = "#f15a29";
+    btn_party.style.color = "#fff";
+    btn_happy.style.background = "#fff";
+    btn_happy.style.color = "#4b4b4b";
+    breakfast_swap.style.backgroundImage = "url('/img/content/nav-menu/breakfast.jpg')";
+    lunch_swap.style.backgroundImage = "url('/img/content/nav-menu/launch.jpg')";
+    dinner_swap.style.backgroundImage = "url('/img/content/nav-menu/dinner.jpg')";
+});
+//_____
+$("#demo01").animatedModal({
+    color: "#f15a29",
+    animatedIn: "lightSpeedIn",
+    animatedOut: "bounceOutDown"
+});
+$("#demo02").animatedModal({
+    color: "#f15a29",
+    animatedIn: "lightSpeedIn",
+    animatedOut: "bounceOutDown"
+});
+

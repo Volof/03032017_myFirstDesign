@@ -1,7 +1,7 @@
 //______nav-menu_____//
 .nav-menu {
   width: 100%;
-  display: inline-block;
+  //display: inline-block;
   text-align: center;
   font-size: 0;
 }
@@ -24,65 +24,69 @@
   height: 210px;
 }
 
-.nav-btn-happy {
+.btn-happy{
+  width: 100%;
   height: 105px;
   line-height: 105px;
+  font-size: 29px;
+  font-family: "Aleo-Italic";
+  color:#4b4b4b;
   background: #ffffff;
+  border: none;
 }
-
-.a-happy {
-  color: #4b4b4b;
-  text-decoration: none;
+.btn-party{
+  width: 100%;
+  height: 105px;
+  line-height: 105px;
+  font-size: 29px;
+  font-family: "Aleo-Italic";
+  background: #f15a29;
+  color: #ffffff;
+  border: none;
 }
-.a-happy:visited{
-  color: #4b4b4b;
+@media (max-width: 767px){
+  .btn-party,
+  .btn-happy,
+  .breakfast{
+    font-size: 14px;
+    height: 65px;
+    line-height: 65px;
+  }
+  .breakfast,
+  .dinner,
+  .lunch{
+    height: 130px;
+    line-height: 130px;
+    font-size: 14px;
+  }
 }
-.a-happy:hover {
-  color: #4b4b4b;
-  text-shadow: 0 0 4px #4b4b4b;
-}
-
 A:link { text-decoration: none; }
 A:visited { text-decoration: none; }
 A:active { text-decoration: none; }
 
-.a-party {
-  color: #ffffff;
-  text-decoration: none;
-}
-.a-party:visited {
-  color: #ffffff;
-}
-.a-party:hover {
-  color: #ffffff;
-  text-shadow: 0 0 4px #fff;
-}
-
-.nav-btn-party {
-  height: 105px;
-  line-height: 105px;
-  background: #f15a29;
-}
-
 .breakfast {
   background: url("/img/content/nav-menu/breakfast.jpg") no-repeat scroll center;
   background-size: cover;
+  cursor: pointer;
 }
 
 .dinner {
   background: url("/img/content/nav-menu/dinner.jpg") no-repeat scroll center;
   background-size: cover;
+  cursor: pointer;
 }
 
 .lunch {
   background: url("/img/content/nav-menu/launch.jpg") no-repeat scroll center;
   background-size: cover;
+  cursor: pointer;
 }
 
 //___tab_drinks________//
 .tab_drinks {
   background: #fff;
-  height: 333px;
+  //height: 333px;
+  overflow: hidden;
 }
 
 .tab_drinks_img {
@@ -91,7 +95,7 @@ A:active { text-decoration: none; }
 }
 
 .tab_drinks_text {
-  padding: 40px 40px 0 0;
+  padding: 40px;
   text-align: justify;
   text-indent: 15px;
   font-size: 16px;
@@ -133,6 +137,16 @@ A:active { text-decoration: none; }
 .nav-tabs > li.active > a:hover {
   color: #f15a29;
   cursor: pointer;
+}
+@media (max-width: 767px){
+  .nav-tabs>li>a{
+    margin-right: 0 !important;
+    font-size: 12px !important;
+  }
+  .nav-tabs>li{
+    margin-right: -2px;
+    margin-bottom: -27px;
+  }
 }
 
 .nav-tabs > li > a {
@@ -225,8 +239,33 @@ h3 {
   padding: 0 40px;
   margin: 15px 0;
 }
+@media (max-width: 1224px){
+  .carousel-indicators li{
+    width: 0% !important;
+    height: 0% !important;
+  }
+}
+@media (max-width: 767px){
+  .manager-right {
+    padding: 0 7px;
+  }
+  .manager-right-p{
+    font-size: 12px;
+  }
+  .carousel-indicators li{
+    width: 0% !important;
+    height: 0% !important;
+  }
+  .carousel-control.left,.carousel-control.right{
+    font-size: 20px !important;
+  }
+  .val-input{
+    margin-right: 0 !important;
+    text-indent: 0 !important;
+  }
+}
 
-//_____Validation____//
+  //_____Validation____//
 h2 {
   color: #ffffff;
   font-family: "Aleo-Bold";

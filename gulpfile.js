@@ -56,7 +56,8 @@ gulp.task("js:vendor", function () {
         "node_modules/sweetalert/dist/sweetalert.min.js",
         "node_modules/bootstrap/dist/js/bootstrap.js",
         "src/libs/Flat-UI-Maps/js/flatui-colorDrop.js",
-        "src/libs/Flat-UI-Maps/js/html5shiv.js"
+        "src/libs/Flat-UI-Maps/js/html5shiv.js",
+        "src/libs/animatedModal.js-master/animatedModal.min.js"
     ])
         .pipe(concat("vendor.js"))
         .pipe(gulpIf(!isDevelopment, uglify()))
@@ -71,7 +72,8 @@ gulp.task("css:vendor", function () {
         "node_modules/tooltipster/dist/css/tooltipster.bundle.min.css",
         "src/libs/Flat-UI-Maps/css/flat-ui.css",
         "src/libs/Flat-UI-Maps/css/map.css",
-        "src/libs/Flat-UI-Maps/css/flatui-colorDrop.css"
+        "src/libs/Flat-UI-Maps/css/flatui-colorDrop.css",
+        "src/libs/animatedModal.js-master/demo/css/animate.min.css"
     ])
         .pipe(gulpIf(!isDevelopment, nano()))
         .pipe(concat("vendor.css"))

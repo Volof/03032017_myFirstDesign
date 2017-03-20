@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <header class="header1">
+    <header class="header">
         <div class="container">
             <div class="nav-container">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
@@ -43,16 +43,16 @@
     <main class="content">
         <div class="nav-menu">
             <div class="nav-btn">
-                <div class="nav-btn-happy"><a href="#" class="a-happy">Happy Hour</a></div>
-                <div class="nav-btn-party"><a href="#" class="a-party">Party Time</a></div>
+                <div class="nav-btn-happy"><button type="button" class="btn-happy" id="btn_happy">Happy Hour</button></div>
+                <div class="nav-btn-party"><button type="button" class="btn-party" id="btn_party">Party Time</button></div>
             </div>
-            <div class="breakfast nav-menu-fix">
+            <div class="breakfast nav-menu-fix" id="breakfast_swap">
                 <span>Breakfast</span>
             </div>
-            <div class="lunch nav-menu-fix">
+            <div class="lunch nav-menu-fix" id="lunch_swap">
                 <span>Lunch</span>
             </div>
-            <div class="dinner nav-menu-fix">
+            <div class="dinner nav-menu-fix" id="dinner_swap">
                 <span>Dinner</span>
             </div>
         </div>
@@ -63,7 +63,18 @@
                         <div class="company">
                             <div class="res-head">
                                 <div class="res-name">
-                                    <a href="" class="company-name">Lviv Chocolate</a>
+                                    <a href="#animatedModal" id="demo2" class="company-name">Lviv Chocolate</a>
+                                    <!--<div id="lviv">-->
+                                        <!--&lt;!&ndash;THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" &ndash;&gt;-->
+                                        <!--<div class="close-animatedModal">-->
+                                            <!--CLOSE MODAL-->
+                                        <!--</div>-->
+                                        <!--<div class="modal-content">-->
+                                            <!--<img src="img/content/nav-menu/Lviv-handmade-chocolate.jpg" style="padding-top: 15px">-->
+                                            <!--<h2>Lviv Chocolate</h2>-->
+                                            <!--&lt;!&ndash;Your modal content goes here&ndash;&gt;-->
+                                        <!--</div>-->
+                                    <!--</div>-->
                                 </div>
                                 <div class="rait stars stars-example-fontawesome">
                                     <select id="example4" name="rating" autocomplete="off">
@@ -100,7 +111,18 @@
                         <div class="company">
                             <div class="res-head">
                                 <div class="res-name">
-                                    <a href="" class="company-name">McDonald's</a>
+                                    <a href="#animatedModal" class="company-name" id="demo01">McDonald's</a>
+                                    <div id="animatedModal">
+                                        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+                                        <div class="close-animatedModal">
+                                            CLOSE MODAL
+                                        </div>
+                                        <div class="modal-content">
+                                            <img src="img/content/nav-menu/mc.jpg" style="padding-top: 15px">
+                                            <h3>McDonald's</h3>
+                                            <!--Your modal content goes here-->
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="rait stars stars-example-fontawesome">
                                     <select id="example2" name="rating" autocomplete="off">
@@ -492,7 +514,7 @@
                                                         <div class="item active">
                                                             <blockquote>
                                                                 <div class="row">
-                                                                    <div class="col-sm-8 col-sm-offset-2">
+                                                                    <div class="col-sm-8 col-sm-offset-2 manager-right-p">
                                                                         <p>Your fast food can be your last food.</p>
                                                                         <small>Someone famous</small>
                                                                     </div>
@@ -503,7 +525,7 @@
                                                         <div class="item">
                                                             <blockquote>
                                                                 <div class="row">
-                                                                    <div class="col-sm-8 col-sm-offset-2">
+                                                                    <div class="col-sm-8 col-sm-offset-2 manager-right-p">
                                                                         <p>Eat to live, don’t live to eat.</p>
                                                                         <small>Someone famous</small>
                                                                     </div>
@@ -514,7 +536,7 @@
                                                         <div class="item">
                                                             <blockquote>
                                                                 <div class="row">
-                                                                    <div class="col-sm-8 col-sm-offset-2">
+                                                                    <div class="col-sm-8 col-sm-offset-2 manager-right-p">
                                                                         <p>Only punks eat junk.</p>
                                                                         <small>Someone famous</small>
                                                                     </div>
@@ -525,7 +547,7 @@
                                                         <div class="item">
                                                             <blockquote>
                                                                 <div class="row">
-                                                                    <div class="col-sm-8 col-sm-offset-2">
+                                                                    <div class="col-sm-8 col-sm-offset-2 manager-right-p">
                                                                         <p>Beware what you eat, it becomes a part of
                                                                             you.</p>
                                                                         <small>Someone famous</small>
@@ -537,7 +559,7 @@
                                                         <div class="item">
                                                             <blockquote>
                                                                 <div class="row">
-                                                                    <div class="col-sm-8 col-sm-offset-2">
+                                                                    <div class="col-sm-8 col-sm-offset-2 manager-right-p">
                                                                         <p>It’s always better when it’s natural.</p>
                                                                         <small>Someone famous</small>
                                                                     </div>
@@ -560,7 +582,7 @@
                                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                                     <div class="manager-right">
                                         <h3>About menu</h3>
-                                        <p>We are menu a little team of 7 members. Lorem ipsum dolor sit amet,
+                                        <p class="manager-right-p">We are menu a little team of 7 members. Lorem ipsum dolor sit amet,
                                             consectetur adipisicing elit. Assumenda
                                             consectetur ex ipsum molestias officiis quisquam sunt suscipit tenetur vel
                                             veniam?</p>
