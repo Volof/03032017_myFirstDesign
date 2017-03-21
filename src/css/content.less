@@ -147,6 +147,19 @@ A:active { text-decoration: none; }
     margin-right: -2px;
     margin-bottom: -27px;
   }
+  .nav-tabs > li> a.tab-fix{
+    font-size: 10px !important;
+    padding: 12px 0;
+  }
+  .tab_drinks_img{
+    //padding: 15px 5px;
+    width: 73%;
+    float: none;
+    padding: 0;
+  }
+  .tab_drinks_text{
+    padding: 0 40px;
+  }
 }
 
 .nav-tabs > li > a {
@@ -214,7 +227,7 @@ span.icon:before {
 
 //___________manager_____________//
 .manager {
-  height: 440px;
+  //height: 440px;
   background: white;
   overflow: hidden;
 }
@@ -227,30 +240,55 @@ h3 {
 }
 
 .manager-col {
-  margin-top: 100px;
+  margin: 100px 0;
+  padding: 15px 0;
+  overflow: hidden;
   -webkit-box-shadow: 0px 0px 10px 4px rgba(231, 231, 231, 1);
   -moz-box-shadow: 0px 0px 10px 4px rgba(231, 231, 231, 1);
   box-shadow: 0px 0px 10px 4px rgba(231, 231, 231, 1);
 }
+.manager-left{
+  float: left;
+  width: 65%;
+  border-right: 2px solid lightgray;
+}
 
 .manager-right {
+  float: right;
+  width: 32%;
   font-size: 16px;
   font-family: "Museosans-500";
-  padding: 0 40px;
-  margin: 15px 0;
+  margin-right: 15px;
 }
 @media (max-width: 1224px){
+  .carousel-inner{
+    //border-bottom: 2px solid lightgray;
+    min-height: 150px;
+  }
   .carousel-indicators li{
     width: 0% !important;
     height: 0% !important;
   }
 }
 @media (max-width: 767px){
-  .manager-right {
+  .carousel-inner{
+    border-bottom: 2px solid lightgray;
+    min-height: 150px;
+  }
+  .manager-left{
+    float: none;
+    border-right: none;
+    width: 100%;
     padding: 0 7px;
   }
+
+  .manager-right {
+    float: none;
+    padding: 0 7px;
+    width: 100%;
+  }
   .manager-right-p{
-    font-size: 12px;
+    font-size: 14px;
   }
   .carousel-indicators li{
     width: 0% !important;
@@ -262,6 +300,8 @@ h3 {
   .val-input{
     margin-right: 0 !important;
     text-indent: 0 !important;
+    margin-bottom: 5px;
+    min-width: 70%;
   }
 }
 

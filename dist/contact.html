@@ -16,13 +16,20 @@
             <fieldset class="text-center">
                 <div class="clearfix">
                     <div class="contact-left">
-                        <input type="text" placeholder="your name *" class="contact-input" name="i1" required>
-                        <input type="text" placeholder="your e-mail *" class="contact-input" name="i2" required>
-                        <input type="text" placeholder="subject" class="contact-input" name="i3" required>
+                        <div class="input-fix">
+                            <input type="text" placeholder="your name *" class="contact-input" name="i1" required>
+                        </div>
+                        <div class="input-fix">
+                            <input type="email" placeholder="your e-mail *" class="contact-input" name="i2" required>
+                        </div>
+                        <div class="input-fix">
+                            <input type="text" placeholder="subject" class="contact-input" name="i3" required>
+                        </div>
+
                     </div>
                     <div class="contact-right">
                         <textarea cols="0" rows="0" placeholder="your messege *" class="contact-text"
-                                  name="i4"></textarea>
+                                  name="i4" required></textarea>
                     </div>
                 </div>
                 <button type="submit" class="val-btn" id="register">Send Message</button>

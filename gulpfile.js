@@ -49,10 +49,10 @@ gulp.task("js:vendor", function () {
     return gulp.src([
         "node_modules/jquery/dist/jquery.js",
         "node_modules/jquery/dist/jquery-migrate.min.js",
+        "node_modules/jquery-validation/dist/jquery.validate.js",
         "node_modules/datatables.net/js/jquery.dataTables.js",
         "node_modules/jquery-bar-rating/dist/jquery.barrating.min.js",
         "node_modules/tooltipster/dist/js/tooltipster.bundle.min.js",
-        "node_modules/jquery-validation/dist/jquery.validate.js",
         "node_modules/sweetalert/dist/sweetalert.min.js",
         "node_modules/bootstrap/dist/js/bootstrap.js",
         "src/libs/Flat-UI-Maps/js/flatui-colorDrop.js",

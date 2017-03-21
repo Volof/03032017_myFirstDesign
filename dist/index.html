@@ -22,7 +22,8 @@
                     <nav class="Menu">
                         <ul class="Menu-list">
                             <li class="Menu-item"><a href="#to_menu" class="Menu-link scrollto">Menu</a></li>
-                            <li class="Menu-item"><a href="menu.html" class="Menu-link" target="_blank">Personal</a></li>
+                            <li class="Menu-item"><a href="menu.html" class="Menu-link" target="_blank">Personal</a>
+                            </li>
                             <li class="Menu-item"><a href="#to_footer" class="Menu-link scrollto">Social</a></li>
                             <li class="Menu-item"><a href="contact.html" class="Menu-link" target="_blank">Contacts</a>
                             </li>
@@ -43,8 +44,12 @@
     <main class="content">
         <div class="nav-menu">
             <div class="nav-btn">
-                <div class="nav-btn-happy"><button type="button" class="btn-happy" id="btn_happy">Happy Hour</button></div>
-                <div class="nav-btn-party"><button type="button" class="btn-party" id="btn_party">Party Time</button></div>
+                <div class="nav-btn-happy">
+                    <button type="button" class="btn-happy" id="btn_happy">Happy Hour</button>
+                </div>
+                <div class="nav-btn-party">
+                    <button type="button" class="btn-party" id="btn_party">Party Time</button>
+                </div>
             </div>
             <div class="breakfast nav-menu-fix" id="breakfast_swap">
                 <span>Breakfast</span>
@@ -65,15 +70,15 @@
                                 <div class="res-name">
                                     <a href="#animatedModal" id="demo2" class="company-name">Lviv Chocolate</a>
                                     <!--<div id="lviv">-->
-                                        <!--&lt;!&ndash;THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" &ndash;&gt;-->
-                                        <!--<div class="close-animatedModal">-->
-                                            <!--CLOSE MODAL-->
-                                        <!--</div>-->
-                                        <!--<div class="modal-content">-->
-                                            <!--<img src="img/content/nav-menu/Lviv-handmade-chocolate.jpg" style="padding-top: 15px">-->
-                                            <!--<h2>Lviv Chocolate</h2>-->
-                                            <!--&lt;!&ndash;Your modal content goes here&ndash;&gt;-->
-                                        <!--</div>-->
+                                    <!--&lt;!&ndash;THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" &ndash;&gt;-->
+                                    <!--<div class="close-animatedModal">-->
+                                    <!--CLOSE MODAL-->
+                                    <!--</div>-->
+                                    <!--<div class="modal-content">-->
+                                    <!--<img src="img/content/nav-menu/Lviv-handmade-chocolate.jpg" style="padding-top: 15px">-->
+                                    <!--<h2>Lviv Chocolate</h2>-->
+                                    <!--&lt;!&ndash;Your modal content goes here&ndash;&gt;-->
+                                    <!--</div>-->
                                     <!--</div>-->
                                 </div>
                                 <div class="rait stars stars-example-fontawesome">
@@ -314,7 +319,7 @@
                         <div class="wrap-tabs">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab"
-                                                                          data-toggle="tab">Fast food</a></li>
+                                                                          data-toggle="tab" class="tab-fix">Fast food</a></li>
                                 <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab"
                                                            data-toggle="tab">Drinks</a></li>
                                 <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab"
@@ -472,122 +477,117 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="manager-col">
-                            <div class="row">
-                                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-                                    <div class="man-slider">
-                                        <h3>Our happy customers</h3>
-                                        <div class="row">
-                                            <div class="col-md-12" data-wow-delay="0.2s">
-                                                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-                                                    <!-- Bottom Carousel Indicators -->
-                                                    <ol class="carousel-indicators">
-                                                        <li data-target="#quote-carousel" data-slide-to="0"
-                                                            class="img-responsive"><img class="img-responsive "
-                                                                                        src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg"
-                                                                                        alt="">
-                                                        </li>
-                                                        <li data-target="#quote-carousel" data-slide-to="1"><img
-                                                                class="img-responsive"
-                                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg"
-                                                                alt="">
-                                                        </li>
-                                                        <li data-target="#quote-carousel" data-slide-to="2"
-                                                            class="active"><img
-                                                                class="img-responsive"
-                                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
-                                                                alt="">
-                                                        </li>
-                                                        <li data-target="#quote-carousel" data-slide-to="3"><img
-                                                                class="img-responsive"
-                                                                src="img/content/photo-mng/1.jpg"
-                                                                alt="1">
-                                                        </li>
-                                                        <li data-target="#quote-carousel" data-slide-to="4"><img
-                                                                class="img-responsive"
-                                                                src="img/content/photo-mng/2.jpg"
-                                                                alt="1">
-                                                        </li>
-                                                    </ol>
-                                                    <!-- Carousel Slides / Quotes -->
-                                                    <div class="carousel-inner text-center1">
-                                                        <!-- Quote 1 -->
-                                                        <div class="item active">
-                                                            <blockquote>
-                                                                <div class="row">
-                                                                    <div class="col-sm-8 col-sm-offset-2 manager-right-p">
-                                                                        <p>Your fast food can be your last food.</p>
-                                                                        <small>Someone famous</small>
-                                                                    </div>
-                                                                </div>
-                                                            </blockquote>
+                            <div class="manager-left">
+                                <h3>Our happy customers</h3>
+                                <div class="row">
+                                    <div class="col-md-12" data-wow-delay="0.2s">
+                                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                            <!-- Bottom Carousel Indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#quote-carousel" data-slide-to="0"
+                                                    class="img-responsive"><img class="img-responsive "
+                                                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg"
+                                                                                alt="">
+                                                </li>
+                                                <li data-target="#quote-carousel" data-slide-to="1"><img
+                                                        class="img-responsive"
+                                                        src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg"
+                                                        alt="">
+                                                </li>
+                                                <li data-target="#quote-carousel" data-slide-to="2"
+                                                    class="active"><img
+                                                        class="img-responsive"
+                                                        src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
+                                                        alt="">
+                                                </li>
+                                                <li data-target="#quote-carousel" data-slide-to="3"><img
+                                                        class="img-responsive"
+                                                        src="img/content/photo-mng/1.jpg"
+                                                        alt="1">
+                                                </li>
+                                                <li data-target="#quote-carousel" data-slide-to="4"><img
+                                                        class="img-responsive"
+                                                        src="img/content/photo-mng/2.jpg"
+                                                        alt="1">
+                                                </li>
+                                            </ol>
+                                            <!-- Carousel Slides / Quotes -->
+                                            <div class="carousel-inner text-center1">
+                                                <!-- Quote 1 -->
+                                                <div class="item active">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2 manager-right-p">
+                                                                <p>Your fast food can be your last food.</p>
+                                                                <small>Someone famous</small>
+                                                            </div>
                                                         </div>
-                                                        <!-- Quote 2 -->
-                                                        <div class="item">
-                                                            <blockquote>
-                                                                <div class="row">
-                                                                    <div class="col-sm-8 col-sm-offset-2 manager-right-p">
-                                                                        <p>Eat to live, don’t live to eat.</p>
-                                                                        <small>Someone famous</small>
-                                                                    </div>
-                                                                </div>
-                                                            </blockquote>
+                                                    </blockquote>
+                                                </div>
+                                                <!-- Quote 2 -->
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2 manager-right-p">
+                                                                <p>Eat to live, don’t live to eat.</p>
+                                                                <small>Someone famous</small>
+                                                            </div>
                                                         </div>
-                                                        <!-- Quote 3 -->
-                                                        <div class="item">
-                                                            <blockquote>
-                                                                <div class="row">
-                                                                    <div class="col-sm-8 col-sm-offset-2 manager-right-p">
-                                                                        <p>Only punks eat junk.</p>
-                                                                        <small>Someone famous</small>
-                                                                    </div>
-                                                                </div>
-                                                            </blockquote>
+                                                    </blockquote>
+                                                </div>
+                                                <!-- Quote 3 -->
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2 manager-right-p">
+                                                                <p>Only punks eat junk.</p>
+                                                                <small>Someone famous</small>
+                                                            </div>
                                                         </div>
-                                                        <!-- Quote 4 -->
-                                                        <div class="item">
-                                                            <blockquote>
-                                                                <div class="row">
-                                                                    <div class="col-sm-8 col-sm-offset-2 manager-right-p">
-                                                                        <p>Beware what you eat, it becomes a part of
-                                                                            you.</p>
-                                                                        <small>Someone famous</small>
-                                                                    </div>
-                                                                </div>
-                                                            </blockquote>
+                                                    </blockquote>
+                                                </div>
+                                                <!-- Quote 4 -->
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2 manager-right-p">
+                                                                <p>Beware what you eat, it becomes a part of
+                                                                    you.</p>
+                                                                <small>Someone famous</small>
+                                                            </div>
                                                         </div>
-                                                        <!-- Quote 5 -->
-                                                        <div class="item">
-                                                            <blockquote>
-                                                                <div class="row">
-                                                                    <div class="col-sm-8 col-sm-offset-2 manager-right-p">
-                                                                        <p>It’s always better when it’s natural.</p>
-                                                                        <small>Someone famous</small>
-                                                                    </div>
-                                                                </div>
-                                                            </blockquote>
+                                                    </blockquote>
+                                                </div>
+                                                <!-- Quote 5 -->
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2 manager-right-p">
+                                                                <p>It’s always better when it’s natural.</p>
+                                                                <small>Someone famous</small>
+                                                            </div>
                                                         </div>
-                                                    </div>
-
-                                                    <!-- Carousel Buttons Next/Prev -->
-                                                    <a data-slide="prev" href="#quote-carousel"
-                                                       class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-                                                    <a data-slide="next" href="#quote-carousel"
-                                                       class="right carousel-control"><i
-                                                            class="fa fa-chevron-right"></i></a>
+                                                    </blockquote>
                                                 </div>
                                             </div>
+
+                                            <!-- Carousel Buttons Next/Prev -->
+                                            <a data-slide="prev" href="#quote-carousel"
+                                               class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                                            <a data-slide="next" href="#quote-carousel"
+                                               class="right carousel-control"><i
+                                                    class="fa fa-chevron-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                                    <div class="manager-right">
-                                        <h3>About menu</h3>
-                                        <p class="manager-right-p">We are menu a little team of 7 members. Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit. Assumenda
-                                            consectetur ex ipsum molestias officiis quisquam sunt suscipit tenetur vel
-                                            veniam?</p>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="manager-right">
+                                <h3>About menu</h3>
+                                <p class="manager-right-p">We are menu a little team of 7 members. Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipisicing elit. Assumenda
+                                    consectetur ex ipsum molestias officiis quisquam sunt suscipit tenetur vel
+                                    veniam?</p>
                             </div>
                         </div>
                     </div>
